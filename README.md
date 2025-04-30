@@ -79,7 +79,7 @@ Most users will choose **one** of these workflows:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/pkward/artifacts-bundler.sh.git
+   git clone https://github.com/pkward/artifacts-bundler.git
    cd artifacts-bundler.sh
    ```
 
