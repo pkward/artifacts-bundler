@@ -100,8 +100,8 @@ Most users will choose **one** of these workflows:
 
 4. **Run the Nginx container locally**
    ```bash
-   # Docker example
-   docker run -d -p 8080:80 elastic-artifacts-nginx:latest
+   # Docker|Podman example
+   docker|podman run -d -p 80:80 elastic-artifacts-nginx:latest
    ```
    Browse: http://localhost:8080/downloads/
 
@@ -133,6 +133,49 @@ artifacts-bundler.sh/
 ## Use Up‑to‑Date Elastic Versions
 
 Examples target **Elastic Stack 8.17.x** or newer. Adjust `--versions` for 8.18.x, 9.x, etc.
+
+---
+
+## Add Internal Artifacts Repository to Fleet Settings
+
+In Kibana, navigate to Fleet > Settings under “Fleet and Elastic Agent”.
+
+Click Add next to Agent Binary Download.
+
+Enter your mirror URL, e.g.:
+```
+http://<YOUR-MIRROR-IP>:<port>/downloads/
+```
+Click Save. Elastic Agents will now fetch binaries from your private mirror. 
+
+Example screenshots:
+
+<img width="1512" alt="Screenshot 2025-04-30 at 7 31 08 PM" src="https://github.com/user-attachments/assets/857ceb84-ea4b-41ba-b80e-f0248a703a39" />
+<img width="1512" alt="Screenshot 2025-04-30 at 7 34 07 PM" src="https://github.com/user-attachments/assets/61512744-9f2f-4e8e-a3b9-d61e433c5252" />
+
+
+## Add Internal Artifacts Repo URL to Elastic Defend Advanced Settings
+
+In Kibana’s Security > Endpoint > Policies, select your Endpoint policy.
+
+Click Edit policy, scroll to Advanced settings, and expand Global artifact download source.
+
+Enter the mirror URL:
+```
+http://<YOUR-MIRROR-IP>:<port>
+```
+Click Save to apply to all enrolled Endpoint agents.
+
+Example screenshot:
+
+<img width="1497" alt="Screenshot 2025-04-30 at 7 27 11 PM" src="https://github.com/user-attachments/assets/6b847eeb-4442-48ab-b9fc-a07b3e33554e" />
+<img width="1497" alt="Screenshot 2025-04-30 at 7 27 00 PM" src="https://github.com/user-attachments/assets/c56d96f6-ab1d-4bee-a1ce-40a644e8bbc9" />
+<img width="1497" alt="Screenshot 2025-04-30 at 7 26 48 PM" src="https://github.com/user-attachments/assets/7c2f5843-38ab-480e-a933-0212101485fc" />
+
+Confirm Elastic Defend can retrieve Global artifacts:
+
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/b0367e5c-7b7e-493e-adc0-8df3ad45234f" />
+
 
 ---
 
