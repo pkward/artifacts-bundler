@@ -80,7 +80,7 @@ Most users will choose **one** of these workflows:
 1. **Clone the repo**
    ```bash
    git clone https://github.com/pkward/artifacts-bundler.git
-   cd artifacts-bundler.sh
+   cd artifacts-bundler
    ```
 
 2. **Install prerequisites**
@@ -88,6 +88,7 @@ Most users will choose **one** of these workflows:
    # RHEL/CentOS example
    sudo dnf install -y curl tar jq gzip
    # Install podman, docker, or nerdctl
+   sudo dnf install -y docker-ce|podman|containerd.io
    ```
 
 3. **Download & bundle artifacts**
@@ -138,7 +139,7 @@ Examples target **Elastic Stack 8.17.x** or newer. Adjust `--versions` for 8.18.
 
 ## Add Internal Artifacts Repository to Fleet Settings
 
-In Kibana, navigate to Fleet > Settings under “Fleet and Elastic Agent”.
+In Kibana, navigate to Fleet > Settings under "Management".
 
 Click Add next to Agent Binary Download.
 
