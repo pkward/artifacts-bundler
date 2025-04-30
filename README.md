@@ -64,7 +64,7 @@ Most users will choose **one** of these workflows:
 | Flag                       | Description                                                      |
 |----------------------------|------------------------------------------------------------------|
 | `-h`, `--help`             | Show help message and exit                                       |
-| `--versions v1,v2,...`     | Comma-separated list of Elastic versions to download              |
+| `--versions 8.x.x,9.x.x,...`     | Comma-separated list of Elastic versions to download       |
 |                            | (repeatable for space-separated versions)                        |
 | `--bundle`                 | Create a `.tar.gz` bundle of the downloaded artifacts            |
 | `--build-nginx-image`      | Build a Docker/Podman/nerdctl image serving the artifacts        |
