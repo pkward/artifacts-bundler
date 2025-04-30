@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: artifacts-nginx
+  labels:
+    app: artifacts-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: artifacts-nginx
+  template:
+    metadata:
+      labels:
+        app: artifacts-nginx
+    spec:
+      containers:
+      - name: nginx
+        image: elastic-artifacts-nginx:latest
+        ports:
+        - containerPort: 80
+        # (Optional) mount your TLS and/or config volumes here:
+        # volumeMounts:
+        # - name: tls
+        #   mountPath: /etc/nginx/tls
+        # - name: config
+        #   mountPath: /etc/nginx/conf.d/default.conf
+        #   subPath: default.conf
+      # (Optional) define volumes if you’re using SSL or custom config:
+      # volumes:
+      # - name: tls
+      #   secret:
+      #     secretName: nginx-artifacts-tls
+      # - name: config
+      #   configMap:
+      #     name: nginx-ssl-config
