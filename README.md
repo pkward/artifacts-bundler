@@ -89,8 +89,6 @@ artifacts-bundler.sh/
 │   ├── nginx-deploy.yaml      # Deployment manifest for k8s demo
 │   ├── nginx-svc.yaml         # LoadBalancer service for k8s demo
 │   └── ssl-configmap.yaml     # (Optional) SSL ConfigMap example
-├── beats/
-│   └── filebeat.yml           # Example Filebeat config for Nginx logs
 ├── README.md                  # This file
 └── LICENSE                    # MIT License text
 ```
