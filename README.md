@@ -104,7 +104,7 @@ Most users will choose **one** of these workflows:
    # Docker|Podman example
    docker|podman run -d -p 80:80 elastic-artifacts-nginx:latest
    ```
-   Browse: http://localhost:8080/downloads/
+   Browse: ```http://<your-ip>/downloads/```
 
 5. **Kubernetes deployment**
    ```bash
