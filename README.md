@@ -1,4 +1,4 @@
-# artifacts-bundler.sh
+# artifacts-bundler
 
 # Offline Elastic Artifact Mirror & Nginx Delivery
 
