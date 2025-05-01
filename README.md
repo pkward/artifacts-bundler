@@ -21,7 +21,6 @@ This is ideal for organizations running **air‑gapped** Elastic deployments or 
   - `https://artifacts.elastic.co/`
   - `https://artifacts.security.elastic.co/`
 
-> **Offline usage:** prefetch dependencies or mirror these URLs in your private registry.
 
 ---
 
