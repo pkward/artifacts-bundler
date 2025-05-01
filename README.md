@@ -172,7 +172,7 @@ Example screenshot:
 <img width="1497" alt="Screenshot 2025-04-30 at 7 27 00 PM" src="https://github.com/user-attachments/assets/c56d96f6-ab1d-4bee-a1ce-40a644e8bbc9" />
 <img width="1497" alt="Screenshot 2025-04-30 at 7 26 48 PM" src="https://github.com/user-attachments/assets/7c2f5843-38ab-480e-a933-0212101485fc" />
 
-Confirm Elastic Defend can retrieve Global artifacts:
+Confirm Elastic Defend (Endpoint) can retrieve Global artifacts:
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/b0367e5c-7b7e-493e-adc0-8df3ad45234f" />
 
