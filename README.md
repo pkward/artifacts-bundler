@@ -14,7 +14,7 @@ This is ideal for organizations running **air‑gapped** Elastic deployments or 
 
 - **Bash** ≥ 4.0
 - **curl**, **tar**
-- **Container builder**: `nerdctl` (Containerd), `podman`, or `docker`
+- **Container builder**: `nerdctl` (containerd), `podman`, or `docker`
 - **Endpoint tools**: `jq`, `zcat`
 - **(Optional)** Kubernetes cluster and `kubectl` for the k8s demo
 - **Network access** to:
