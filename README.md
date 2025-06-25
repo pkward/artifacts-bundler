@@ -4,7 +4,7 @@
 
 - **Bulk‑downloads** Elastic Stack binaries (Beats, APM, Fleet, Endpoint, etc.) and security endpoint artifacts.
 - **Bundles** them into a timestamped tarball for easy distribution in air‑gapped environments.
-- **Builds** a minimal Nginx container image to serve the artifacts over HTTP.
+- **Builds** a minimal Nginx container image to serve the artifacts over HTTP or HTTPS.
 
 This is ideal for organizations running **air‑gapped** Elastic deployments or needing an offline mirror of both core Elastic and Elastic Defend artifacts.
 
