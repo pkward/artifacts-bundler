@@ -106,8 +106,7 @@ done
 
 # === Validate ===
 if ! $DO_BUNDLE && ! $DO_BUILD_NGINX_IMAGE && [ ${#VERSIONS[@]} -eq 0 ]; then
-  error "Must specify at least --versions, --bundle, or --build-nginx-image"
-  usage
+  error "Must specify at least --versions, --bundle, or --build-nginx-image. Use -h for help."
 fi
 
 if $DO_BUNDLE && [ -z "$BUNDLE_NAME" ]; then
