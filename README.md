@@ -1,12 +1,13 @@
 # Offline Elastic Artifact Mirror & Nginx Delivery
 
-**download-artifacts.sh** is a helper script that:
+**download-artifacts.sh** is a helper script that bulk-downloads Elastic Stack binaries and security endpoint artifacts, bundles them into a timestamped tarball, and builds a minimal Nginx container image for distribution in air-gapped environments.
 
-- **Bulk‑downloads** Elastic Stack binaries (Beats, APM, Fleet, Endpoint, etc.) and security endpoint artifacts.
-- **Bundles** them into a timestamped tarball for easy distribution in air‑gapped environments.
-- **Builds** a minimal Nginx container image to serve the artifacts over HTTP or HTTPS.
+## 🛡️ Cybersecurity & Threat Mitigation Context
 
-This is ideal for organizations running **air‑gapped** Elastic deployments or needing an offline mirror of both core Elastic and Elastic Defend artifacts.
+This tool is designed to solve critical endpoint protection architecture challenges in high-security environments:
+
+1.  **Hardening Air-Gapped Networks:** It allows disconnected systems (SCADA, military, banking) to receive critical global threat intelligence, malware signatures, and behavioral rules without violating network segmentation policies.
+2.  **Supply Chain Integrity & Attack Surface Reduction:** By using a local, minimal Nginx container to serve signed artifacts (`artifacts.security.elastic.co`), it mitigates Man-in-the-Middle (MitM) risks and restricts the attack surface of the internal update infrastructure.
 
 ---
 
