@@ -4,8 +4,10 @@
 # Script: download-artifacts.sh
 # Author: Pete Ward
 # Created: 2025-04-19
-# Description: Downloads Elastic and endpoint artifacts for specified versions,
-#              bundles them, and optionally builds an Nginx image to serve them.
+# Description: Defensive SecOps tool engineered for air-gapped EDR/XDR deployments.
+#              Automates the secure acquisition, integrity bundling, and isolated 
+#              containerized delivery of Elastic Stack and Elastic Defend security 
+#              artifacts/global threat intelligence feeds to isolated network segments..
 # License: MIT
 # =============================================================================
 set -euo pipefail
